@@ -10,7 +10,7 @@
         <img class="page-header__logo-image" src="../source/img/page-main/logo-full.svg" width="202" height="60" alt="Логотип Кэт энерджи">
       </a>
       <nav class="main-navigation">
-        <button class="main-navigation__toggle" type="button">
+        <button class="button main-navigation__toggle" type="button">
           <span class="visually-hidden">
             Открыть меню
           </span>
@@ -74,25 +74,25 @@
               </legend>
               <ul class="data-purpose__list">
                 <li class="data-purpose__item">
-                  <input class="visually-hidden" type="radio" name="purpose-program" value="slimming" checked>
-                  <span class="data-purpose__control"></span>
-                  <span class="data-purpose__label">
+                  <label class="data-purpose__label" for="purpose-program">
                     похудение
-                  </span>
+                  </label>
+                  <input class="visually-hidden" type="radio" name="purpose-program" id="purpose-program" value="slimming" checked>
+                  <span class="data-purpose__control"></span>
                 </li>
                 <li class="data-purpose__item">
-                  <input class="visually-hidden" type="radio" name="purpose-program" value="weight-gain">
-                  <span class="data-purpose__control"></span>
-                  <span class="data_purpose__label">
+                  <label class="data-purpose__label" for="purpose-program">
                     Набор массы
-                  </span>
+                  </label>
+                  <input class="visually-hidden" type="radio" name="purpose-program" id="purpose-program" value="weight-gain">
+                  <span class="data-purpose__control"></span>
                 </li>
                 <li class="data-purpose__item">
-                  <input class="visually-hidden" type="radio" name="purpose-program" value="don't know">
-                  <span class="data-purpose__control"></span>
-                  <span class="data_purpose__label">
+                  <label class="data-purpose__label" for="purpose-program">
                     Не знаю (Нужен ваш совет)
-                  </span>
+                  </label>
+                  <input class="visually-hidden" type="radio" name="purpose-program" id="purpose-program" value="don't know">
+                  <span class="data-purpose__control"></span>
                 </li>
               </ul>
             </fieldset>
@@ -123,9 +123,8 @@
               <legend class="comment__title">
                 Комментарий
               </legend>
-              <label class="visually-hidden">
-                <textarea class="comment__input" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-              </label>
+              <label class="visually-hidden" for="comment">Расскажите о коте</label>
+              <textarea class="comment__input" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
             <fieldset class="additionally">
               <legend class="additionally__title">
@@ -133,27 +132,35 @@
               </legend>
                 <ul class="additionally__list">
                   <li class="additionally__item">
-                    <input class="additionally__input" type="checkbox" name="sweetener" checked>
-                    <label class="additionally__label">сахарозаменитель</label>
+                    <label class="additionally__label" for="sweetener">
+                      сахарозаменитель
+                    </label>
+                      <input class="additionally__input" type="checkbox" name="sweetener" checked>
                   </li>
                   <li class="additionally__item">
-                    <input class="additionally__input" type="checkbox" name="drinking-water">
-                    <label class="additionally__label">питьевая вода</label>
+                    <label class="additionally__label" for="drinking-water">
+                      питьевая вода
+                    </label>
+                    <input class="additionally__input" type="checkbox" name="drinking-water" id="drinking-water">
                   </li>
                   <li class="additionally__item">
-                    <input class="additionally__input" type="checkbox" name="milk">
-                    <label class="additionally__label">молоко</label>
+                    <label class="additionally__label" for="milk">
+                      молоко
+                    </label>
+                    <input class="additionally__input" type="checkbox" name="milk" id="milk">
                   </li>
                   <li class="additionally__item">
-                    <input class="additionally__input" type="checkbox" name="vitamins">
-                    <label class="additionally__label">витамины</label>
+                    <label class="additionally__label" for="vitamins">
+                      витамины
+                    </label>
+                    <input class="additionally__input" type="checkbox" name="vitamins" id="vitamins">
                   </li>
                 </ul>
             </fieldset>
-            <button class="data-cat__button" type="submit">
+            <button class="program__button" type="submit">
               Отправить заявку
             </button>
-            <small class="data-cat__legend">
+            <small class="program__legend">
               * — Обязательные поля
             </small>
           </form>
@@ -176,7 +183,7 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="location__link" href="#">
+        <a class="page-footer__link-icon" href="#">
           <img class="page-footer__icon" src="../images/page-main/logo-mobile-second.svg" width="128" height="24" alt="Второй логотип Кэт энерджи">
         </a>
         <div class="page-footer__social">
