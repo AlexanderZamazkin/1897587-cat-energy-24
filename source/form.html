@@ -51,19 +51,19 @@
                 <li class="data-cat__item">
                   <label class="data-cat__label">
                     ИМЯ:*
-                    <input class="data-cat__input" type="text" id="name-cat" name="name-cat" placeholder="барсик">
+                    <input class="data-cat__input" type="text" id="data-cat-name" name="name-cat" placeholder="барсик" required>
                   </label>
                 </li>
                 <li class="data-cat__item">
                   <label class="data-cat__label">
                     Вес (кг):*
-                    <input class="data-cat__input" type="number" id="weight-cat" name="weight-cat" placeholder="7">
+                    <input class="data-cat__input" type="number" id="data-cat-weight" name="weight-cat" placeholder="7" required>
                   </label>
                 </li>
                 <li class="data-cat__item">
                   <label class="data-cat__label">
                     Возраст (лет):
-                    <input class="data-cat__input" type="number" id="age-cat" name="age-cat" placeholder="7">
+                    <input class="data-cat__input" type="number" id="data-cat-age" name="age-cat" placeholder="7">
                   </label>
                 </li>
               </ul>
@@ -74,24 +74,24 @@
               </legend>
               <ul class="data-purpose__list">
                 <li class="data-purpose__item">
-                  <label class="data-purpose__label" for="purpose-program">
+                  <label class="data-purpose__label" for="purpose-program-slimming">
                     похудение
                   </label>
-                  <input class="visually-hidden" type="radio" name="purpose-program" id="purpose-program" value="slimming" checked>
+                  <input class="visually-hidden" type="radio" name="program" id="purpose-program-slimming" value="slimming" checked>
                   <span class="data-purpose__control"></span>
                 </li>
                 <li class="data-purpose__item">
-                  <label class="data-purpose__label" for="purpose-program">
+                  <label class="data-purpose__label" for="purpose-program-weight">
                     Набор массы
                   </label>
-                  <input class="visually-hidden" type="radio" name="purpose-program" id="purpose-program" value="weight-gain">
+                  <input class="visually-hidden" type="radio" name="program" id="purpose-program-weight" value="weight-gain">
                   <span class="data-purpose__control"></span>
                 </li>
                 <li class="data-purpose__item">
-                  <label class="data-purpose__label" for="purpose-program">
+                  <label class="data-purpose__label" for="purpose-program-advice">
                     Не знаю (Нужен ваш совет)
                   </label>
-                  <input class="visually-hidden" type="radio" name="purpose-program" id="purpose-program" value="don't know">
+                  <input class="visually-hidden" type="radio" name="program" id="purpose-program-advice" value="don't know">
                   <span class="data-purpose__control"></span>
                 </li>
               </ul>
@@ -106,7 +106,7 @@
                     <span class="contact-details__title">
                       E-mail:*
                     </span>
-                    <input class="contact-details__input" type="text" id="contact-email" name="contact-email" placeholder="kuklachev@gmail.com">
+                    <input class="contact-details__input" type="text" id="contact-email" name="email" placeholder="kuklachev@gmail.com" required>
                   </label>
                 </li>
                 <li class="contact-details__item">
@@ -114,7 +114,7 @@
                     <span class="contact-details__title">
                       Телефон:*
                     </span>
-                    <input class="contact-details__input" type="tel" id="contact-phone" name="contact-phone" placeholder="8 (960) 900-60-90">
+                    <input class="contact-details__input" type="tel" id="contact-phone" name="phone" placeholder="8 (960) 900-60-90" required>
                   </label>
                 </li>
               </ul>
@@ -123,8 +123,8 @@
               <legend class="comment__title">
                 Комментарий
               </legend>
-              <label class="visually-hidden" for="comment">Расскажите о коте</label>
-              <textarea class="comment__input" id="comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <label class="visually-hidden" for="comment-cat">Расскажите о коте</label>
+              <textarea class="comment__input" id="comment-cat" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
             <fieldset class="additionally">
               <legend class="additionally__title">
@@ -132,28 +132,28 @@
               </legend>
                 <ul class="additionally__list">
                   <li class="additionally__item">
-                    <label class="additionally__label" for="sweetener">
+                    <label class="additionally__label" for="additionally-sweetener">
                       сахарозаменитель
                     </label>
-                      <input class="additionally__input" type="checkbox" name="sweetener" checked>
+                      <input class="additionally__input" type="checkbox" name="sweetener" id="additionally-sweetener" checked>
                   </li>
                   <li class="additionally__item">
-                    <label class="additionally__label" for="drinking-water">
+                    <label class="additionally__label" for="additionally-water">
                       питьевая вода
                     </label>
-                    <input class="additionally__input" type="checkbox" name="drinking-water" id="drinking-water">
+                    <input class="additionally__input" type="checkbox" name="drinking-water" id="additionally-water">
                   </li>
                   <li class="additionally__item">
-                    <label class="additionally__label" for="milk">
+                    <label class="additionally__label" for="additionally-milk">
                       молоко
                     </label>
-                    <input class="additionally__input" type="checkbox" name="milk" id="milk">
+                    <input class="additionally__input" type="checkbox" name="milk" id="additionally-milk">
                   </li>
                   <li class="additionally__item">
-                    <label class="additionally__label" for="vitamins">
+                    <label class="additionally__label" for="additionally-vitamins">
                       витамины
                     </label>
-                    <input class="additionally__input" type="checkbox" name="vitamins" id="vitamins">
+                    <input class="additionally__input" type="checkbox" name="vitamins" id="additionally-vitamins">
                   </li>
                 </ul>
             </fieldset>
