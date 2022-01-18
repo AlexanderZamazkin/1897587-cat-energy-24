@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Oswald";
+  font-weight: 500;
+  src: url("../fonts/oswaldmedium.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: 400;
+  src: url("../fonts/oswaldregular.woff2") format("woff2");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+
+body {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: @medium-font;
+  line-height: 18px;
+  font-weight: 400;
+  color: @text-color;
+  background-color: @main-color;
+  margin: 0 auto;
+}
+
+.button {
+  font-size: @small-font;
+  text-transform: uppercase;
+  color: @main-color;
+  text-decoration: none;
+  background-color: @green-light;
+  padding: 10px 73px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
