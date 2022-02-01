@@ -6,6 +6,16 @@
   margin: 0;
   padding-top: 13px;
   margin-bottom: 13px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 10px;
+  }
 }
 
 .additional-card__quantity {
@@ -13,6 +23,18 @@
   font-size: @small-font;
   font-weight: 400;
   line-height: 14px;
+
+  @media (min-width: @tablet-width) {
+    font-size: @medium-font;
+    margin-left: auto;
+    margin-top: 4px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 13px;
+    margin-left: 0;
+    margin-right: auto;
+  }
 }
 
 .additional-card__cost {
@@ -23,6 +45,20 @@
   margin-left: auto;
   margin-top: -14px;
   margin-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: @medium-font;
+    margin: 0;
+    margin-left: auto;
+    margin-top: 2px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 44px;
+    margin-top: 13px;
+    margin-right: 38px;
+    margin-left: 112px;
+  }
 }
 
 .additional-card__link {
@@ -33,4 +69,18 @@
   margin-top: 15px;
   display: flex;
   justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 26px;
+    width: 632px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+    width: 244px;
+    grid-column-start: 4;
+    grid-column-end: 5;
+  }
 }
