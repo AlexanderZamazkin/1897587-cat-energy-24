@@ -1,5 +1,13 @@
 .program__wrapper {
   margin-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 68px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 110px;
+  }
 }
 
 .program__title {
@@ -9,6 +17,21 @@
   width: 259px;
   margin-top: 27px;
   margin-bottom: 37px;
+
+  @media (min-width: @tablet-width) {
+    font-size: @giant-font;
+    line-height: 60px;
+    width: 432px;
+    margin-top: 65px;
+    margin-left: 1px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+    margin-top: 77px;
+    margin-bottom: 56px;
+  }
 }
 
 .program__description {
@@ -19,6 +42,26 @@
   width: 226px;
   margin: 0;
   margin-bottom: 39px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 323px;
+    margin-left: 2px;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 323px;
+  }
+}
+
+.program__selection {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 569px 570px;
+    grid-column-gap: 80px;
+  }
 }
 
 .program__button {
@@ -28,10 +71,36 @@
   padding: 9px 86px;
   margin-right: 20px;
   margin-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    width: 282px;
+    margin-left: 3px;
+    margin-top: 59px;
+    margin-right: 0;
+    margin-bottom: 40px;
+    padding: 13px 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 568px;
+    margin-left: 1px;
+    margin-top: 24px;
+  }
 }
 
 .program__legend {
   font-family: "Arial", "Oswald", sans-serif;
   font-size: @small-font;
   margin-left: 62px;
+
+  @media (min-width: @tablet-width) {
+    font-size: @medium-font;
+    margin-left: 61px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 1px;
+    margin-top: 41px;
+  }
 }

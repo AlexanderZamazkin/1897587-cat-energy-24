@@ -2,16 +2,37 @@
   margin: 0;
   padding: 0;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 3px;
+    font-size: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 1px;
+  }
 }
 
 .data-cat__list {
   .list-clean();
   color: @color-secondary;
   margin-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 569px;
+  }
 }
 
 .data-cat__item {
   margin-bottom: 14px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .data-cat__item:last-child {
@@ -32,4 +53,9 @@
   margin-left: 12px;
   height: 45px;
   padding: 0;
+  color: @color-secondary;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  }
 }

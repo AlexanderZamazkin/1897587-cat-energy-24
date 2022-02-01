@@ -1,16 +1,38 @@
 .data-purpose {
-  margin: 0;
-  padding: 0;
+  .list-clean();
   border: none;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 3px;
+    width: 630px;
+    font-size: 20px;
+  }
 }
 
 .data-purpose__list {
   .list-clean();
   margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 7px;
+    padding-bottom: 30px;
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 569px;
+    margin-bottom: 69px;
+  }
 }
 
 .data-purpose__item {
   color: @black-light;
   padding-top: 28px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    line-height: 29.64px;
+    padding-top: 23px;
+    margin-left: 87.89px;
+  }
 }

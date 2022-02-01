@@ -1,5 +1,14 @@
 
 .page-form {
   width: 320px;
-  margin: auto;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+  }
 }
+
